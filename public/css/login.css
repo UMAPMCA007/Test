@@ -1,0 +1,175 @@
+@font-face {
+    font-family: myFirstFont;
+    src: url(fonts/Muli-Regular.ttf);
+}
+
+body{
+  background: #FFFFFF;
+  /*background: #FFFFFF url(../img/img1.jpg) center top;*/
+    background-size: cover;
+    font-family: myFirstFont;
+}
+.logon{
+  height: 152px;
+  width: 319px;
+}
+.log-container{
+    margin-top: 2%;
+    overflow: -webkit-paged-x;
+    padding-top: 40px;
+    color: #003380;
+}
+.forgottpass {
+    text-decoration: underline;
+    color: #003380 !important;
+}
+.signup
+{
+    cursor: pointer;
+    font-size: 35px;
+}
+.signup_form
+{
+    /*color: #fff;*/
+    width: 80% !important;
+    margin-right: 10%;
+    margin-left: 10%;
+}
+.signin_form
+{
+    width: 80% !important;
+    margin-left: 10% !important;
+    margin-right: 10% !important;
+}
+.logon
+{
+ margin-right: auto;
+ margin-left: auto;
+}
+
+.loginh4
+{
+    margin-top: 20px;
+    text-transform: uppercase;
+    color: #000000;
+}
+.form-contaner-log
+{
+    padding: 25px 3%;   
+}
+.form-contaner-log input
+{
+    /*margin-top: 11px;*/
+}
+.form-contaner-log button
+{
+    margin-top: 20px;
+}
+.edit {
+    position: absolute;
+    right: 28px;
+    top: 14px;
+    z-index: 999;
+}
+.edit i
+{
+    color: #003380;
+    font-size: 21px;
+}
+.profile-pic
+{
+
+    position: relative;
+}
+.btn{
+    background-color: #003380;
+    color: #FFFF;
+}
+.form-horizontal .control-label {
+    padding-top: 7px;
+    margin-bottom: 10px;
+}
+.form-control {
+    display: block;
+    width: 100%;
+    height: 45px;
+    padding: 9px 15px;
+    font-size: 14px;
+    line-height: 1.52857143;
+    color: #000;
+    background-color: transparent;
+    background-image: none;
+    border: 2px solid #000000;
+    border-radius: 0;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+    -webkit-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+    -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+}
+/*check box*/
+/* The container */
+.container_check {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    font-weight: 300 !important;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.container_check input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+/* Create a custom checkbox */
+.checkmark_cm {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: transparent;
+    border: solid 2px #000;
+}
+/* On mouse-over, add a grey background color */
+.container_check:hover input ~ .checkmark_cm {
+    background-color: transparent;
+    border: solid 2px #000;
+}
+
+/* When the checkbox is checked, add a blue background */
+.container_check input:checked ~ .checkmark_cm {
+    background-color: #fff;
+}
+
+/* Create the checkmark_cm/indicator (hidden when not checked) */
+.checkmark_cm:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* Show the checkmark_cm when checked */
+.container_check input:checked ~ .checkmark_cm:after {
+    display: block;
+}
+
+/* Style the checkmark_cm/indicator */
+.container_check .checkmark_cm:after {
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid #003380;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
